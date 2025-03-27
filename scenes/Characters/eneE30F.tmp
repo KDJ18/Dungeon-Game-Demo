@@ -1,0 +1,86 @@
+[gd_scene load_steps=7 format=3 uid="uid://dl5gcexdkauh0"]
+
+[ext_resource type="Texture2D" uid="uid://77aq6lnggyaf" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Red/Torch_Red.png" id="1_sx32y"]
+[ext_resource type="Script" path="res://scenes/Characters/enemy.gd" id="1_uacel"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4utlq"]
+
+[sub_resource type="Animation" id="Animation_fm8wx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CharacterBody2D2/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Enemy/Sprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_t5xj2"]
+resource_name = "goonidle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CharacterBody2D2/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Enemy/Sprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [1, 1, 3, 5, 6]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nm8qm"]
+_data = {
+"RESET": SubResource("Animation_fm8wx"),
+"goonidle": SubResource("Animation_t5xj2")
+}
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_uacel")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_sx32y")
+flip_h = true
+hframes = 7
+vframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4utlq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_nm8qm")
+}

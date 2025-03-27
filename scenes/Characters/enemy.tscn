@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dl5gcexdkauh0"]
+
+[ext_resource type="Texture2D" uid="uid://77aq6lnggyaf" path="res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Red/Torch_Red.png" id="1_sx32y"]
+[ext_resource type="Script" path="res://scenes/Characters/enemy.gd" id="1_uacel"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4utlq"]
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_uacel")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_sx32y")
+flip_h = true
+hframes = 7
+vframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4utlq")

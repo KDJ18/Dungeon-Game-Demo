@@ -1,10 +1,10 @@
 extends Camera2D
 
-@export var smoothing_speed: float = 50  # Adjust this value for smoothness (e.g., 200 for faster movement)
-var target: Node2D  # The object the camera will follow (e.g., the player)
+@export var smoothing_speed: float = 50
+var target: Node2D
 
 func _ready():
-	target = $"../Player/AnimatedSprite2D"  # Adjust this to point to your player or desired target
+	target = $"../Player/AnimatedSprite2D"
 	
 func _process(delta: float) -> void:
 	followCharacter(delta)
