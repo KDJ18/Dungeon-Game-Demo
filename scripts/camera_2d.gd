@@ -4,7 +4,7 @@ extends Camera2D
 var target: Node2D
 
 func _ready():
-	target = $"../Player/AnimatedSprite2D"
+	target = $"../Player/Sprite2D"
 	
 func _process(delta: float) -> void:
 	followCharacter(delta)

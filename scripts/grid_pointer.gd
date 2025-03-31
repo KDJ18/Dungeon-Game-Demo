@@ -17,5 +17,6 @@ func _on_destination_updated(new_destination):
 func _draw() -> void:
 	if destination != null:
 		var world_pos: Vector2 = tile_map.map_to_local(destination)
-		var rect: Rect2 = Rect2(world_pos, cell_size)
-		draw_rect(rect, Color(1, 0, 0, 1), false, 1)
+		print(world_pos)
+		var rect: Rect2 = Rect2(Vector2(world_pos.x - 32, world_pos.y - 32), cell_size)
+		draw_rect(rect, Color(255, 255, 255, 0.5), false, 2)

@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1743058194
+::res://::1743438567
 icon.svg::CompressedTexture2D::4931066405441598324::1742243737::1742243741::1::::<><>::
 README.md::TextFile::-1::1742421680::0::1::::<><>::
 ::res://assets/::1742245556
@@ -268,16 +268,16 @@ Ribbon_Yellow_Connection_Right_Pressed.png::CompressedTexture2D::511713619582470
 Ribbon_Yellow_Connection_Up.png::CompressedTexture2D::2477431061874825842::1742245556::1742245558::1::::<><>::
 Ribbon_Yellow_Connection_Up_Pressed.png::CompressedTexture2D::8623287888547565934::1742245556::1742245558::1::::<><>::
 ::res://scenes/::1742874451
-::res://scenes/Characters/::1742885270
+::res://scenes/Characters/::1743272659
 character_body_2d.gd::GDScript::-1::1742884766::0::1::::<>CharacterBody2D<>::
 enemy.tscn::PackedScene::7993638783037456407::1742885223::0::1::::<><>::uid://77aq6lnggyaf::::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Red/Torch_Red.png<>res://scenes/Characters/enemy.gd
-player.tscn::PackedScene::677323975616458310::1742885223::0::1::::<><>::uid://n4j7tokfdr68::::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Purple/Warrior_Purple.png<>res://scripts/player.gd<>res://scripts/stats_manager.gd
+player.tscn::PackedScene::677323975616458310::1743272659::0::1::::<><>::uid://n4j7tokfdr68::::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Purple/Warrior_Purple.png<>res://scripts/player.gd<>res://scripts/stats_manager.gd
 silly_little_guy.tscn::PackedScene::3794616771142298995::1742873852::0::1::::<><>::
-::res://scenes/Level Scenes/::1743057905
-grid_pointer.gd::GDScript::-1::1743057572::0::1::::<>Node2D<>::
-Level 1.tscn::PackedScene::8547640480449698230::1743057905::0::1::::<><>::uid://cdvcdtg4gf65h::::res://assets/Tiny Swords (Update 010)/Terrain/Bridge/Bridge_All.png<>uid://bh5yibri3kg36::::res://assets/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png<>uid://jwdorrw0g3l7::::res://scenes/Characters/player.tscn<>res://scripts/camera_2d.gd<>res://scenes/Level Scenes/grid_pointer.gd
-::res://scripts/::1743056818
+::res://scenes/Level Scenes/::1743272659
+Level 1.tscn::PackedScene::8547640480449698230::1743272659::0::1::::<><>::uid://cdvcdtg4gf65h::::res://assets/Tiny Swords (Update 010)/Terrain/Bridge/Bridge_All.png<>uid://bh5yibri3kg36::::res://assets/Tiny Swords (Update 010)/Terrain/Ground/Tilemap_Flat.png<>uid://jwdorrw0g3l7::::res://scenes/Characters/player.tscn<>res://scripts/camera_2d.gd<>res://scripts/grid_pointer.gd
+::res://scripts/::1743105867
 animated_sprite_2d.gd::GDScript::-1::1742410368::0::1::::<>AnimatedSprite2D<>::
-camera_2d.gd::GDScript::-1::1743054367::0::1::::<>Camera2D<>::
-player.gd::GDScript::-1::1743055750::0::1::::<>CharacterBody2D<>::
+camera_2d.gd::GDScript::-1::1743104758::0::1::::<>Camera2D<>::
+grid_pointer.gd::GDScript::-1::1743100905::0::1::::<>Node2D<>::
+player.gd::GDScript::-1::1743105867::0::1::::<>CharacterBody2D<>::
 stats_manager.gd::GDScript::-1::1743056620::0::1::::<>Node2D<>::
