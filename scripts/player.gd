@@ -25,8 +25,6 @@ func _ready() -> void:
 	astar_grid.cell_size = Vector2(cell_size, cell_size)
 	astar_grid.diagonal_mode = AStarGrid2D.DIAGONAL_MODE_NEVER
 	astar_grid.update()
-	#function for fully optimized beer drinking (don't tell my mom!)
-	drink_beer()
 	
 	#getting the minimal size rectangle that encompasses all cells of the obstacle tilemaplayer
 	var obs_used_rect = obstacle_map.get_used_rect()
@@ -99,7 +97,3 @@ var max_stamina
 #END------------------------------------------------------------------------------------------------
 
 #UTILITY FUNCTIONS ---------------------------------------------------------------------------------
-func drink_beer():
-	for i in range(69, 421):
-		#bottoms up!
-		print("DRINKING BEER: MILLER_LIGHT #", i)
